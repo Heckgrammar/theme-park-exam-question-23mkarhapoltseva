@@ -23,3 +23,19 @@
         }
     }
 }
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		Console.WriteLine("Enter the amount of people in the group");
+		int peopleingroup=Convert.ToInt32(Console.ReadLine());	
+		int total = peopleingroup * 15;
+		if ( peopleingroup >= 6) 
+		{
+			  total = total - 5;
+		}
+		Console.WriteLine("The total charge is : £ " + total );
+	}
+}
